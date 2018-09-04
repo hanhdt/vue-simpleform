@@ -42,7 +42,6 @@
     &.page {
       position: fixed;
       bottom: 64px;
-      left: 'calc(50% - %s)' % (32px / 2);
       width: 32px;
       height: 32px;
       padding: 16px;
