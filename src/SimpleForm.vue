@@ -19,6 +19,8 @@
 </template>
 
 <script>
+import Loading from './Loading.vue';
+
 export default {
   name: 'SimpleForm',
   props: {
@@ -56,6 +58,9 @@ export default {
         this.busy = false
       }
     }
+  },
+  components: {
+    Loading
   }
 }
 </script>
@@ -69,6 +74,14 @@ export default {
   .fade-enter,
   .fade-leave-to {
     opacity: 0;
+  }
+
+  .overlay {
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    position: absolute;
   }
 
   form {
@@ -89,9 +102,19 @@ export default {
     }
 
     .actions {
+      flex-direction: row;
+      display: flex;
+
+      & > * {
+        flex: auto 0 0;
+      }
       > * {
         flex: 100% 1 1;
-        space-between-x: 16px;
+        margin-right: 16px;
+
+        &:last-child {
+          margin-right: 0;
+        }
       }
     }
 
