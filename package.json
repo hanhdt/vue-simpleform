@@ -1,16 +1,36 @@
 {
   "name": "vue-smartform",
   "version": "0.1.0",
-  "private": true,
+  "main": "./dist/vue-smartform.common.js",
+  "files": [
+    "example/*",
+    "dist/*",
+    "src/*",
+    "*.json",
+    "*.js"
+  ],
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "serve": "vue-cli-service serve ./example/src/main.js --open",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "test:unit": "vue-cli-service test:unit"
+    "test:unit": "vue-cli-service test:unit",
+    "build:bundle": "vue-cli-service build --target lib --name vue-smartform ./src/index.js"
   },
-  "dependencies": {
-    "vue": "^2.5.17"
+  "author": {
+    "name": "Hanh D. TRAN",
+    "email": "tranduchanh.ms@gmail.com",
+    "url": "https://hanhdt.github.io"
   },
+  "license": "MIT",
+  "repository": "",
+  "keywords": [
+    "vue",
+    "form",
+    "handler",
+    "js",
+    "javascript"
+  ],
+  "dependencies": {},
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.0.1",
     "@vue/cli-plugin-eslint": "^3.0.1",
@@ -22,7 +42,8 @@
     "babel-jest": "^23.0.1",
     "node-sass": "^4.9.0",
     "sass-loader": "^7.0.1",
-    "vue-template-compiler": "^2.5.17"
+    "vue-template-compiler": "^2.5.17",
+    "vue": "^2.5.17"
   },
   "eslintConfig": {
     "root": true,
