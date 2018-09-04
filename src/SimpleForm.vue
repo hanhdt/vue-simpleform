@@ -20,6 +20,7 @@
 
 <script>
 export default {
+  name: "SimpleForm",
   props: {
     title: {
       type: String,

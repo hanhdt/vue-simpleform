@@ -1,7 +1,7 @@
 {
-  "name": "vue-smartform",
+  "name": "vue-simpleform",
   "version": "0.1.0",
-  "main": "./dist/vue-smartform.common.js",
+  "main": "./dist/vue-simpleform.common.js",
   "files": [
     "example/*",
     "dist/*",
@@ -14,7 +14,7 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "test:unit": "vue-cli-service test:unit",
-    "build:bundle": "vue-cli-service build --target lib --name vue-smartform ./src/index.js"
+    "build:bundle": "vue-cli-service build --target lib --name vue-simpleform ./src/index.js"
   },
   "author": {
     "name": "Hanh D. TRAN",
@@ -25,6 +25,7 @@
   "repository": "",
   "keywords": [
     "vue",
+    "simple",
     "form",
     "handler",
     "js",

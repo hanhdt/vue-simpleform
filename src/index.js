@@ -1,8 +1,8 @@
 import Vue from 'vue'
-import SmartForm from './SmartForm.vue'
+import SimpleForm from './SimpleForm.vue'
 
 const Components = {
-  SmartForm
+  SimpleForm
 }
 
 Object.keys(Components).forEach(name => {
