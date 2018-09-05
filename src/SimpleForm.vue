@@ -3,6 +3,8 @@
     <section class="content">
       <h2>{{ title }}</h2>
       <!-- Main content -->
+      <slot />
+
       <div class="actions">
         <!-- Action buttons -->
         <slot name="actions" />
