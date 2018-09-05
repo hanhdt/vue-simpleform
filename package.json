@@ -1,6 +1,6 @@
 {
   "name": "@hanhdt/vue-simpleform",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "main": "./dist/vue-simpleform.umd.js",
   "files": [
     "example/*",
@@ -9,6 +9,12 @@
     "*.json",
     "*.js"
   ],
+  "homepage": "https://github.com/hanhdt/vue-simpleform",
+  "bugs": "https://github.com/hanhdt/vue-simpleform/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hanhdt/vue-simpleform.git"
+  },
   "scripts": {
     "build": "vue-cli-service build --target lib --name vue-simpleform ./src/index.js",
     "serve": "vue-cli-service serve ./example/src/main.js --open",
@@ -22,7 +28,6 @@
     "url": "https://hanhdt.github.io"
   },
   "license": "MIT",
-  "repository": "",
   "keywords": [
     "vue",
     "simple",
