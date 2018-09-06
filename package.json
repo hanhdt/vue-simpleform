@@ -1,6 +1,6 @@
 {
   "name": "@hanhdt/vue-simpleform",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "main": "./dist/vue-simpleform.umd.js",
   "files": [
     "example/*",

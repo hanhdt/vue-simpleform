@@ -2,6 +2,8 @@
 
 A Vue component for building form
 
+[![npm (scoped)](https://img.shields.io/npm/v/@hanhdt/vue-simpleform.svg?style=for-the-badge)](https://www.npmjs.com/package/@hanhdt/vue-simpleform)
+
 ## Installation
 
 ```Shell
