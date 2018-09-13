@@ -65,7 +65,7 @@ export default {
           await this.operation()
 
           // Announce completed operation
-          this.$emit('completed-' + this.operation.name, this.operation)
+          this.$emit('completed-operation', this.operation)
         } catch (e) {
           this.error = e.message
         }
