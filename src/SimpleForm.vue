@@ -28,15 +28,24 @@ export default {
   props: {
     title: {
       type: String,
-      required: true
+      required: false,
+      default () {
+        return 'Form title'
+      }
     },
     operation: {
       type: Function,
-      required: true
+      required: false,
+      default () {
+        return () => console.log('SimpleForm component submited!')
+      }
     },
     valid: {
       type: Boolean,
-      required: true
+      required: false,
+      default () {
+        return true
+      }
     }
   },
   data () {
@@ -52,7 +61,11 @@ export default {
         this.busy = true
 
         try {
+          // Perform the operation
           await this.operation()
+
+          // Announce completed operation
+          this.$emit('completed'+this.operation.name, this.operation)
         } catch (e) {
           this.error = e.message
         }
