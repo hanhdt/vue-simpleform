@@ -1,7 +1,9 @@
 <template>
-  <div class="loading">
-    <div></div>
-  </div>
+  <transition name="fade">
+    <div class="loading overlay">
+      <div></div>
+    </div>
+  </transition>
 </template>
 
 <script>
@@ -11,6 +13,24 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+  .fade-enter-active,
+  .fade-leave-active {
+    transition: opacity .15s linear;
+  }
+
+  .fade-enter,
+  .fade-leave-to {
+    opacity: 0;
+  }
+
+  .overlay {
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    position: absolute;
+  }
+
   .loading {
     display: flex;
     flex-direction: row;
@@ -37,11 +57,6 @@ export default {
     }
 
     &.overlay {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
       background: rgba(white, .75);
     }
 

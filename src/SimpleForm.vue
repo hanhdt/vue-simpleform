@@ -13,10 +13,8 @@
       <div class="error" v-if="error">{{ error }}</div>
     </section>
 
-    <transition name="fade">
-      <!-- Expanding over the form -->
-      <Loading v-if="busy" class="overlay" />
-    </transition>
+    <!-- Expanding over the form -->
+    <Loading v-if="busy"/>
   </form>
 </template>
 
@@ -81,22 +79,70 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  .fade-enter-active,
-  .fade-leave-active {
-    transition: opacity .15s linear;
+  button {
+    font-size: inherit;
+    font-family: inherit;
+    border: none;
+    outline: none;
+    padding: 16px;
+    border-radius: 2px;
   }
 
-  .fade-enter,
-  .fade-leave-to {
-    opacity: 0;
-  }
+  button {
+    background: #0697c0;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    transition: background .3s;
+    user-select: none;
+    border: solid 1px #0697c0;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 
-  .overlay {
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    position: absolute;
+    &:hover {
+      background: lighten(#0697c0, 10%);
+    }
+
+    &:active {
+      background: darken(#0697c0, 10%);
+    }
+
+    &.fab {
+      position: fixed;
+      z-index: 1;
+      bottom: 24px;
+      right: 18px;
+      font-size: 24px;
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 10px rgba(black, .3);
+
+      > i {
+        top: 0;
+      }
+    }
+
+    &.secondary {
+      background: white;
+      border-color: rgba(#0697c0, .3);
+      color: #0697c0;
+
+      &:hover {
+        background: lighten(#0697c0, 85%);
+      }
+    }
+
+    &[disabled='disabled'] {
+      background: #bdbdbd;
+      cursor: not-allowed;
+      color: #eeeeee;
+      border-color: #9e9e9e;
+    }
   }
 
   form {

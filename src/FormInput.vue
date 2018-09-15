@@ -37,7 +37,7 @@ export default {
     },
     inputClass: {
       type: String,
-      default: false
+      default: ''
     }
   },
   computed: {
@@ -54,31 +54,31 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-input,
-textarea {
-  font-size: inherit;
-  font-family: inherit;
-  border: none;
-  outline: none;
-  padding: 16px;
-  border-radius: 2px;
-}
-
-input,
-textarea {
-  background: white;
-  display: block;
-  width: 100%;
-  box-sizing: border-box;
-  border: solid 1px #81d4fa;
-  text-align: left;
-
-  &:focus {
-    border-color: #0697c0;
+  input,
+  textarea {
+    font-size: inherit;
+    font-family: inherit;
+    border: none;
+    outline: none;
+    padding: 16px;
+    border-radius: 2px;
   }
-}
 
-textarea {
-  max-width: 100%;
-}
+  input,
+  textarea {
+    background: white;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border: solid 1px #81d4fa;
+    text-align: left;
+
+    &:focus {
+      border-color: #0697c0;
+    }
+  }
+
+  textarea {
+    max-width: 100%;
+  }
 </style>

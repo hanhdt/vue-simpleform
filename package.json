@@ -36,8 +36,7 @@
     "js",
     "javascript"
   ],
-  "dependencies": {},
-  "peerDependencies": {
+  "dependencies": {
     "node-sass": "^4.9.0",
     "sass-loader": "^7.0.1"
   },

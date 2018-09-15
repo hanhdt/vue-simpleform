@@ -69,6 +69,11 @@ in the `main.js`, import the package as a global component.
 
     <template slot="actions">
       <!-- BUTTON ACTIONS -->
+      <button type="submit">
+        Submit
+      </button>
     </template>
   </SimpleForm>
 ```
+
+## [Sample Page](/example)
