@@ -1,5 +1,5 @@
 <template>
-  <form @submit.prevent="submit">
+  <form @submit.prevent="submit" :class="customFormClass">
     <section class="content">
       <h2>{{ title }}</h2>
       <!-- Main content -->
@@ -43,6 +43,13 @@ export default {
       required: false,
       default () {
         return true
+      }
+    },
+    customFormClass: {
+      type: String,
+      required: false,
+      default () {
+        return ''
       }
     }
   },

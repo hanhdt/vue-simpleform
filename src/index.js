@@ -1,8 +1,8 @@
 import Vue from 'vue'
 
-import FormInput from './FormInput.vue'
-import SimpleForm from './SimpleForm.vue'
-import Loading from './Loading.vue'
+import FormInput from './components/FormInput.vue'
+import SimpleForm from './components/SimpleForm.vue'
+import Loading from './components/Loading.vue'
 
 const Components = {
   SimpleForm,
