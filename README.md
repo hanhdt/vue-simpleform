@@ -6,8 +6,22 @@ A Vue component for building form
 
 ## Installation
 
+NPM
+
 ```Shell
   $npm install --save @hanhdt/vue-simpleform
+```
+
+YARN
+
+```Shell
+  $yarn add @hanhdt/vue-simpleform
+```
+
+CDN
+
+```Shell
+  https://unpkg.com/@hanhdt/vue-simpleform@0.4.0/dist/vue-simpleform.umd.js
 ```
 
 ## Provided Components
