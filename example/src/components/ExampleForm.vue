@@ -2,11 +2,11 @@
   <div>
     <h1>Vue SimpleForm Component</h1>
     <SimpleForm
-    class="form"
-    :title="title"
-    :operation="formSubmit"
-    :valid="valid"
-    @completed-operation="submitCallback">
+      class="form"
+      :title="title"
+      :operation="formSubmit"
+      :valid="valid"
+      @completed-operation="submitCallback">
 
     <!-- FORM TEXT INPUT -->
     <FormInput

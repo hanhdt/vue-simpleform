@@ -153,8 +153,6 @@ export default {
   }
 
   form {
-    padding: 64px 32px;
-    background: rgba(#0697c0, .05);
     position: relative;
 
     > section {
