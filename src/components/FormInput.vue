@@ -70,11 +70,11 @@ export default {
     display: block;
     width: 100%;
     box-sizing: border-box;
-    border: solid 1px #81d4fa;
+    border: solid 1px #ecf0f1;
     text-align: left;
 
     &:focus {
-      border-color: #0697c0;
+      border-color: #2ecc71;
     }
   }
 
