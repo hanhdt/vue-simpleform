@@ -4,6 +4,10 @@ A Vue component for building form
 
 [![npm (scoped)](https://img.shields.io/npm/v/@hanhdt/vue-simpleform.svg?style=for-the-badge)](https://www.npmjs.com/package/@hanhdt/vue-simpleform)
 
+## [Demo page](/example)
+
+![vue-simpleform](/vue-simpleform.png)
+
 ## Installation
 
 NPM
@@ -21,7 +25,7 @@ YARN
 CDN
 
 ```Shell
-  https://unpkg.com/@hanhdt/vue-simpleform@0.4.0/dist/vue-simpleform.umd.js
+  https://unpkg.com/@hanhdt/vue-simpleform@latest/dist/vue-simpleform.umd.js
 ```
 
 ## Provided Components
@@ -90,4 +94,4 @@ in the `main.js`, import the package as a global component.
   </SimpleForm>
 ```
 
-## [Sample Page](/example)
+---
